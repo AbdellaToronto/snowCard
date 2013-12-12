@@ -1,0 +1,30 @@
+#Card{
+    background-image: url("../assets/images/background.jpg");
+    background-size: 100%;
+    width: 800px;
+    height: 525px;
+}
+
+#RestOfScreens{
+    width: 400px;
+    height: 500px;
+    margin-left: 30%;
+    margin-top: 15%;
+}
+
+.snowcard {
+    -webkit-transition: 1s linear all;
+    transition: 1s linear all;
+    opacity:1;
+}
+
+.snowcard.ng-hide {
+    opacity:0;
+}
+
+.snowcard.ng-hide-add, .snowcard.ng-hide-remove {
+    /* this needs to be here to make it visible during the animation
+       since the .ng-hide class is already on the element rendering
+       it as hidden. */
+    display:block!important;
+}
